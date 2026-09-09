@@ -121,7 +121,7 @@ class Calculation(QGroupBox):
 			return
 
 	def calculate_n2(self):
-		df = self.home_parent.plot_options.df
+		df = pd.DataFrame(self.home_parent.plot_options.plotted_data)
 
 		match self.calculate_button_group.checkedId():
 			case 0:

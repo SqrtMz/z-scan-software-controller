@@ -39,7 +39,7 @@ class BokehPlot:
 				self.doc.remove_periodic_callback(self.callback_id)
 				self.callback_id = None
 				self.ser.close()
-				QMessageBox.warning(window, "There was a communication problem", f"There was an error while trying to read the data: \n{e}")
+				# QMessageBox.warning(window, "There was a communication problem", f"There was an error while trying to read the data: \n{e}")
 				return
 
 			x = steps_to_cm(int(x), window.options.distance_per_step)
