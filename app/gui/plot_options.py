@@ -11,7 +11,6 @@ class PlotOptions(QWidget):
 		self.home_parent = home_parent
 
 		self.plotted_data = []
-		self.df = pd.DataFrame(data=None, columns=['x', "y1", "y2"])
 
 		self.main_layout = QHBoxLayout(self)
 		

@@ -108,7 +108,7 @@ class Calculation(QGroupBox):
 
 			loaded_df = pd.read_csv(path)
 		
-			self.home_parent.plot_options.df = loaded_df
+			self.home_parent.plot_options.plotted_data = loaded_df.to_dict(orient="records")
 
 			def plot():
 				for i in range(len(self.home_parent.bokeh_plot.sources)):

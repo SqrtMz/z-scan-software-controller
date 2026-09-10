@@ -16,7 +16,7 @@ class AboutDialog(QDialog):
 
 		images_layout.addStretch()
 
-		for path in ["assets/ua.webp", "assets/geoel.png"]:
+		for path in ["assets/geoel.png", "assets/ua.webp"]:
 			img_label = QLabel()
 			pixmap = QPixmap(path)
 
